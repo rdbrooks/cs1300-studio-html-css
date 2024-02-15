@@ -1,20 +1,45 @@
-#logoBar{
-  width: 30vw;
-  height: 100vh;
-}
-#siteLogo{
-  width: 100%;
-}
-body {
+#website {
+  background-color: rgb(200, 231, 200);
   display: flex;
 }
-#staffGallery{
-  width: 70vw;
-  display: inherit;
-
+#logoBar {
+  width: 35vw;
+  height: 100vh;
 }
-.galleryImage{
+#siteLogo {
+  width: 100%;
+}
+#staffGallery {
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.galleryImage {
   width: 100%;
   height: auto;
   height: 300px;
+}
+h1,
+h3,
+h4 {
+  color: rgb(1, 77, 1);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #website {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logoBar {
+    width: 100vw;
+    height: 50vh;
+  }
 }
